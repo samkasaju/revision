@@ -1,22 +1,16 @@
-
-name: Devops class strat git hub
+name: Devops class start GitHub
 
 on:
-  
   push:
     branches: ["main"]
   workflow_dispatch:
 
-
-
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    
     runs-on: ubuntu-latest
     steps:
-     - name: print hello world
-       run: |
-       echo "hello world" 
-       hostname
-       ip a
+      - name: Print Hello World
+        run: |
+          echo "hello world"
+          hostname
+          ip a
