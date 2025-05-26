@@ -14,3 +14,5 @@ jobs:
           echo "hello world"
           hostname
           ip a
+          cd /var/www/html
+          git pull origin main
