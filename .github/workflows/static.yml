@@ -1,21 +1,16 @@
-
 name: Devops class strat git hub
 
 on:
-  
   push:
     branches: ["main"]
   workflow_dispatch:
 
-
-
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    
-    runs-on: own-server
+    runs-on: self-hosted  # or your exact runner label from `./config.sh`
     steps:
-     - name: print hello world
-       run: |
-       echo "hello world" 
-        
+      - name: print hello world
+        run: |
+          echo "hello world"
+          hostname
+          ip a
